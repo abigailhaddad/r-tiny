@@ -11,3 +11,8 @@ print(counts)
 #here's some documentation on counts and bar charts
 barplot(counts, main="People By Sex",
         xlab="Men and Women")
+#this is a crosstab
+crosstab <- table(MyData$RELIMP_W30, MyData$F_SEX_FINAL)
+#this graphs it
+barplot(crosstab, main="People By Sex and RELIMP",
+        xlab="Men and Women by Relimp", beside=T)
